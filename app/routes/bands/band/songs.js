@@ -10,8 +10,6 @@ export default class BandsBandSongsRoute extends Route {
     return band;
   }
 
-
-
   resetController(controller) {
     controller.title = '';
     controller.showAddSong = true;

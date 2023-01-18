@@ -13,6 +13,9 @@ module.exports = function (environment) {
         // e.g. EMBER_NATIVE_DECORATOR_SUPPORT: true
       },
     },
+    fontawesome: {
+      defaultPrefix: 'fal', // light icons
+    },
 
     APP: {
       // Here you can pass flags/options to your application instance

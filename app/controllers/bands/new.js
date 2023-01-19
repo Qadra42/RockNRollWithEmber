@@ -15,14 +15,14 @@ export default class BandsNewController extends Controller {
       if (transition.isAborted) {
         return;
       }
-      if(this.confirmedLeave){
+      if (this.confirmedLeave) {
         return;
       }
-      if(transition.from.name === 'bands.new'){
-        if(this.name){
+      if (transition.from.name === 'bands.new') {
+        if (this.name) {
           let leave = window.confirm('You have unsaved changes. Are you sure?');
         }
-        if(leave){
+        if (leave) {
           this.confirmedLeave = true;
         } else {
           transition.abort();
